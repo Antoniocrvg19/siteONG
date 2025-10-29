@@ -1,0 +1,134 @@
+
+:root {
+
+  --color-primary-500: #087ba5;
+  --color-primary-700: #0f445c;
+  --color-secondary-500: #FF9F1C;
+  --color-secondary-700: #B76D00;
+  --color-neutral-100: #F7F7F9;
+  --color-neutral-300: #CFCFD8;
+  --color-neutral-500: #7B7C88;
+  --color-neutral-700: #4B4C55;
+  --color-neutral-900: #1B1B1F;
+  --color-success: #2ECC71;
+  --color-danger: #E74C3C;
+
+  --font-family-sans: "Inter", Arial, sans-serif;
+  --fs-xxl: 32px;
+  --fs-xl: 24px;
+  --fs-lg: 20px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff; 
+  font-family: var(--font-family-sans);
+  font-size: var(--fs-md);
+  color: var(--color-neutral-900);
+  line-height: 1.6;
+  margin: 0;
+
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+header, footer {
+  background: var(--color-primary-500);
+  color: white;
+  padding: var(--space-3);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-2);
+  padding: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: var(--fs-lg);
+}
+
+
+h1 { font-size: var(--fs-xxl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+p { margin-bottom: var(--space-2); }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+input, select {
+  padding: var(--space-1);
+  font-size: var(--fs-md);
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 6px;
+}
+input:invalid {
+  border-color: var(--color-danger);
+}
+button {
+  padding: var(--space-2);
+  background: var(--color-primary-700);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--color-secondary-500);
+}
+
+
+.form-status {
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+  border-radius: 6px;
+  display: none;
+}
+.form-status.success {
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--color-success);
+  display: block;
+}
+.form-status.error {
+  background: rgba(231, 76, 60, 0.1);
+  color: var(--color-danger);
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}

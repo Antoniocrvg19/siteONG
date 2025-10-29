@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Voluntário</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner container">
+      <h1>Cadastro de Voluntário</h1>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" class="active">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="mb-2">Formulário de Cadastro</h2>
+    <p class="lead mb-3">Preencha seus dados para participar como voluntário.</p>
+
+    <form>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(21) 99999-9999" required />
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required />
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="00000-000" required />
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required />
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="RJ">RJ</option>
+          <option value="SP">SP</option>
+          <option value="MG">MG</option>
+          <option value="ES">ES</option>
+          <option value="BA">BA</option>
+          <option value="PR">PR</option>
+          <option value="RS">RS</option>
+          <option value="SC">SC</option>
+        </select>
+      </fieldset>
+
+      <button type="submit" class="primary">Enviar Cadastro</button>
+      <div class="form-status"></div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Organização Esperança</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
