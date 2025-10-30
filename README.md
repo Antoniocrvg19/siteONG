@@ -22,7 +22,7 @@ Site desenvolvido como projeto escolar para apresentar a ONG fictícia **Organiz
 
 ## 🌐 Acesse o Site Online
 
-🔗 [Clique aqui para visualizar](https://antoniocruys.github.io/siteONG/)  
+🔗 [Clique aqui para visualizar](https://antoniocrvg19.github.io/siteONG/index.html)  
 
 ---
 
